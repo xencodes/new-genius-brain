@@ -21,7 +21,7 @@ function Goals() {
                 lg: "3xl",
                 xl: "5xl",
               }}
-              ml={{ base: 10, sm: 40, md: 14, lg: 14, xl: 10 }}
+              ml={{ base: 20, sm: 40, md: 14, lg: 14, xl: 10 }}
             >
               Your Goals Matter To Us
             </Text>
@@ -34,7 +34,7 @@ function Goals() {
                 xl: "3xl",
               }}
               mt={{ base: 5, sm: 4, md: 0, lg: 0, xl: 0 }}
-              ml={{ base: 10, sm: 0, md: 14, lg: 14, xl: 10 }}
+              ml={{ base: 0, sm: 0, md: 14, lg: 14, xl: 10 }}
               textAlign={"center"}
             >
               learn as you earn
@@ -65,7 +65,7 @@ function Goals() {
               lg: "500px",
               xl: "600px",
             }}
-            ml={{ base: 10, sm: 36, md: 0, lg: 0, xl: 0 }}
+            ml={{ base: 28, sm: 36, md: 0, lg: 0, xl: 0 }}
             src="/assest/computer.png"
             alt="computer"
           />
