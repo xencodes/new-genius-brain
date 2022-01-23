@@ -9,7 +9,7 @@ function Circle() {
         maxW={"6xl"}
         columns={{ base: "1", sm: 3, md: 3, lg: 3, xl: 3 }}
         spacing={{ base: 6, sm: 4, md: 12, lg: 16, xl: 24 }}
-        px={{ base: 28, sm: 8, md: 24, lg: 28, xl: 2 }}
+        px={{ base: 28, sm: 2, md: 24, lg: 28, xl: 2 }}
       >
         <Box>
           <Center
