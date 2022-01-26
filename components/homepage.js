@@ -8,6 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import Typist from "react-typist";
 
 function Home() {
   return (
@@ -56,7 +57,7 @@ function Home() {
               "2xl": "8xl",
             }}
           >
-            Lead to Positive Returns
+            <Typist>Lead to Positive Returns</Typist>
           </Text>
         </Box>
 
@@ -83,8 +84,15 @@ function Home() {
           w={{ base: 24, sm: 24, md: 28, lg: 28, xl: 32 }}
           fontWeight={"bold"}
           rounded={"full"}
+          colorScheme={"telegram"}
         >
-          Join Us
+          <a
+            href="https://t.me/Geniussignalbot"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Join Us
+          </a>
         </Button>
         <Button
           w={{ base: 28, sm: 28, md: 28, lg: 28, xl: 32 }}
