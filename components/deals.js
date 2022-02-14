@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   ListItem,
   SimpleGrid,
   Text,
@@ -19,7 +20,7 @@ function Deals() {
         Deals
       </Text>
       <SimpleGrid
-        columns={{ base: 1, sm: 2, md: 3, lg: 3, xl: 3 }}
+        columns={{ base: 1, sm: 2, md: 2, lg: 2, xl: 2 }}
         m={"0 auto"}
         maxW={"6xl"}
         spacing={{ base: 4, sm: 4, md: 6, lg: 6, xl: 0 }}
@@ -36,12 +37,12 @@ function Deals() {
               fontWeight={"medium"}
               fontSize={{ base: "lg", sm: "lg", md: "xl", lg: "xl", xl: "2xl" }}
             >
-              Starting at $140 /mo
+              Starting at $130 /mo
             </Text>
             <UnorderedList
               fontSize={{ base: "md", sm: "lg", md: "xl", lg: "xl", xl: "xl" }}
             >
-              <ListItem>webinars</ListItem>
+              <ListItem>Webinars</ListItem>
               <ListItem>Daily Trading Signals</ListItem>
               <ListItem>Tips</ListItem>
               <ListItem>Analysis</ListItem>
@@ -50,28 +51,9 @@ function Deals() {
               <ListItem>Lifetime Mentorship</ListItem>
             </UnorderedList>
           </Box>
-        </VStack>
-        <VStack mt={{ base: 6, sm: 8, md: 12, lg: 14, xl: 16 }}>
-          <Text
-            fontWeight={"bold"}
-            fontSize={{ base: "lg", sm: "xl", md: "2xl", lg: "2xl", xl: "3xl" }}
-          >
-            FREE PROGRAMM
-          </Text>
           <Box>
-            <UnorderedList
-              fontSize={{ base: "md", sm: "lg", md: "xl", lg: "xl", xl: "xl" }}
-            >
-              <ListItem>webinars</ListItem>
-              <ListItem>Trading Signals</ListItem>
-              <ListItem>Tips + Learning</ListItem>
-            </UnorderedList>
-            <Text
-              textAlign={"center"}
-              fontSize={{ base: "md", sm: "lg", md: "xl", lg: "xl", xl: "xl" }}
-            >
-              Experience
-            </Text>
+            <cardElement />
+            <Button colorScheme={"blue"}>Buy now</Button>
           </Box>
         </VStack>
         <VStack mt={{ base: 6, sm: 8, md: 12, lg: 14, xl: 16 }}>
@@ -100,6 +82,9 @@ function Deals() {
               <ListItem>Analysis</ListItem>
               <ListItem>Signals</ListItem>
             </UnorderedList>
+          </Box>
+          <Box>
+            <Button colorScheme={"blue"}>Buy now</Button>
           </Box>
         </VStack>
       </SimpleGrid>

@@ -4,18 +4,26 @@ import {
   HStack,
   Image,
   SimpleGrid,
+  Spacer,
   Text,
   VStack,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import Typist from "react-typist";
 
 function Home() {
   return (
     <Box p={{ base: 4, md: 8, lg: 12, xl: 16 }}>
-      <HStack spacing={{ base: 2, md: 6, lg: 12, xl: 14 }}>
+      <HStack spacing={{ base: 2, md: 6, lg: 12, xl: 14 }} cursor={"pointer"}>
         <Image
-          w={{ base: "40px", sm: "60px", md: "90px", lg: "100px", xl: "100px" }}
+          w={{
+            base: "40px",
+            sm: "60px",
+            md: "90px",
+            lg: "100px",
+            xl: "100px",
+          }}
           src="/assest/brain.png"
           alt="brain"
         />
@@ -25,6 +33,15 @@ function Home() {
         >
           GeniusBrain
         </Text>
+        <Spacer />
+        <Link passHref href={"/about"}>
+          <Text
+            fontWeight={"bold"}
+            fontSize={{ base: "xl", md: "2xl", lg: "3xl", xl: "4xl" }}
+          >
+            About
+          </Text>
+        </Link>
       </HStack>
       <SimpleGrid
         columns={{ base: 1, sm: 2, md: 2, lg: 2, xl: 2 }}
